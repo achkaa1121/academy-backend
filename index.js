@@ -9,10 +9,10 @@ const converter = (which) => {
     }else{"Rock"}
 }
 const person = {
-    which = converter(user);
+    which = converter(user)
 }
 const ai = {
-    which = converter(computer);
+    which = converter(computer)
 }
 console.log(person.which)
 const user = Number(window.prompt("What do you play? 1 = scissor, 2 = paper, 3 = rock"));
