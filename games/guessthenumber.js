@@ -5,15 +5,14 @@ export const guessNum = () => {
     let userValue = window.prompt("Your guess:");
     const number = theNum();
     console.log(number);
-    for(let i = 0; i < 2; i++){
+    for(var i = 0; i < 2; i++){
         if(number == userValue){
-            console.log("You guessed it!")
+            window.alert("You guessed it!");
             break;
         }else if(number < userValue){
-            console.log("Your guess is bigger.");
+            userValue = window.prompt("Guess again. The number is smaller.")
         }else{
-            console.log("Your guess is smaller.");
+            userValue = window.prompt("Guess again. The number is bigger.");
         }
-        userValue = window.prompt("Guess again.");
     }
 }

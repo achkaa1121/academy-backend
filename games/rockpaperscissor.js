@@ -9,23 +9,24 @@ if(user === computer){
 }else{
    switch(user === 1 && computer === 2){
         case user === 1 && computer === 3:
-            console.log("You lost");
+            window.alert("You lost")
             break;
         case user === 2 && computer === 1:
-            console.log("You lost");
+            window.alert("You lost")
             break;
         case user === 2 && computer === 3:
-            console.log("You win");
+            window.alert("You win");
             break;
         case user === 3 && computer === 1:
-            console.log("You win");
+            window.alert("You win");
             break;
         case user === 3 && computer === 2:
-            console.log("You lost");
+            window.alert("You lost")
             break;
         default:
-            console.log("You win");
+            window.alert("You win");
             break;
     }
 }
+console.log(computer, user);
 }
