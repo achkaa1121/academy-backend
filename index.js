@@ -1,16 +1,13 @@
-let num = 0;
-const counter = document.getElementById("counter");
-const nemehBut = document.getElementById("buttonNemeh");
-const hasahBut = document.getElementById("buttonHasah");
-nemehBut.innerText = "Nemeh";
-hasahBut.innerText = "Hasah";
-const plus = () => {
-        num++;
-    counter.innerText = num;
+const title = document.getElementById("Title");
+const content = document.getElementById("Content");
+const button = document.getElementById("button")
+let blogID = 1;
+const blogPoster = () => {
+    const blog = blogID;
+    blog = {
+        title: title,
+        content: content
+    }
+    blogID++;
 }
-const minus = () => {
-        num--;
-    counter.innerText = num;
-}
-nemehBut.addEventListener("click",plus);
-hasahBut.addEventListener("click",minus);
+button.addEventListener("click",blogPoster);
