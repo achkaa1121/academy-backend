@@ -21,5 +21,37 @@ class Calculator{
         }
     }
 }
-const calc1 = new Calculator(6, 4);
-console.log(calc1.divide());
+const a = document.getElementById("a");
+const b = document.getElementById("b");
+const add = document.getElementById("add");
+const subtract = document.getElementById("subtract");
+const multiply = document.getElementById("multiply");
+const divide = document.getElementById("divide");
+const addFunc = () => {
+	const calc1 = new Calculator(Number(a.value), Number(b.value));
+	let result = calc1.add();
+	let finalResult = document.getElementById("result");
+	finalResult.innerHTML = `${result}`
+}
+const subtractFunc =  () => {
+	const calc1 = new Calculator(Number(a.value), Number(b.value));
+	let result = calc1.subtract();
+	let finalResult = document.getElementById("result");
+	finalResult.innerHTML = `${result}`
+}
+const multiplyFunc =  () => {
+	const calc1 = new Calculator(Number(a.value), Number(b.value));
+	let result = calc1.multiply();
+	let finalResult = document.getElementById("result");
+	finalResult.innerHTML = `${result}`
+}
+const divideFunc =  () => {
+	const calc1 = new Calculator(Number(a.value), Number(b.value));
+	let result = calc1.divide();
+	let finalResult = document.getElementById("result");
+	finalResult.innerHTML = `${result}`
+}
+add.addEventListener("click", addFunc);
+subtract.addEventListener("click", subtractFunc);
+multiply.addEventListener("click", multiplyFunc);
+divide.addEventListener("click", divideFunc);

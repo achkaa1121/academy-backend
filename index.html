@@ -1,2 +1,49 @@
 <!DOCTYPE html>
-<script type="module" src="calculator.js"></script>
+<html>
+	<head>
+		<h1>Class Demo</h1>
+	</head>
+	<body>
+		<br id="Rectangle">
+			<h2>Rectangle area and perimeter calculator</h2>
+			<p>Width: <input id="Width" type="number"></p>
+			<p>Height: <input id="Height" type="number"></br></p>
+			<button id="calculate">Calculate</button>
+			<p id="resultRectangle"></p>
+			<script type="module" src="calculateRectangle.js"></script>
+		</div>
+		<div id="Student">
+			<h2>Student</h2>
+			<p>Name: <input id="name" type="text"></p>
+			<p>Age: <input id="age" type="text"></p>
+			<button id="introduce">Introduce</button>
+			<p id="resultStudent"></p>
+			<script type="module" src="Student.js"></script>
+		</div>
+		<div id="Bank">
+			<h2>Bank Account</h2>
+			<p>Owner: <input type="text"></p>
+			<p>Initial balance: <input id="initialBalance" type="number"></p>
+			<p>Deposit: <input id="deposit" type="number"></p>
+			<p>Withdraw: <input id="withdraw" type="number"></p>
+			<button id="updateBalance">Update Balance</button>
+			<p id="balance"></p>
+			<script type="module" src="BankAccount.js"></script>
+		</div>
+		<div id="ToDo">
+			<h2>TodoList</h2>
+			<p>Task: <input id="task" type="text"></p>
+			<button id="addTask">Add Task</button> <button id="removeTask">Remove Task</button> <button id="showTask">Show Tasks</button>
+			<p id="tasks"></p>
+			<script type="module" src="ToDoList.js"></script>
+		</div>
+		<div id="Calculator">
+			<h2>Calculator</h2>
+			<p>a: <input id="a" type="number"></p>
+			<p>b: <input id="b" type="number"></p>
+			<button id="add">Add</button> <button id="subtract">Subtract</button> <button id="multiply">Multiply</button> <button id="divide">Divide</button>
+			<p id="result"></p>
+			<script type="module" src="calculator.js"></script>
+		</div>
+	</body>
+</html>

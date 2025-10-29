@@ -1,21 +1,21 @@
 class BankAccount{
-    constructor(owner, balance){
-        this.owner = owner;
+    constructor(balance){
         this.balance = balance;
     }
-    deposit(amount){
-        return this.balance + amount;
+	calculate(deposit, withdraw){
+		return this.balance + deposit - withdraw;
+	}
     }
-    withdraw(amount){
-        if(this.balance >= amount){
-            return this.balance - amount;
-        }else{
-            window.alert("Not enough balance!");
-        }
-    }
-    getbalance(){
-        return this.balance;
-    }
+const button = document.getElementById("updateBalance");
+const func = () => {
+	const balance = document.getElementById("initialBalance");
+	const a = new BankAccount(Number(balance.value));
+	const deposit = document.getElementById("deposit");
+	const d = Number(deposit.value);
+	const withdraw = document.getElementById("withdraw");
+	const w = Number(withdraw.value);
+	const result = document.getElementById("balance");
+	const r = a.calculate(d, w)
+	result.innerHTML = `Balance: ${r}`;
 }
-const me = new BankAccount("Me", 50000);
-console.log(me.getbalance());
+button.addEventListener("click", func);
