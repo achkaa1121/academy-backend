@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/achkaa1121/academy-nodeJS#readme",
   "dependencies": {
+    "@tanstack/react-query": "^5.90.20",
     "bcrypt": "^6.0.0",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
