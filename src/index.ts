@@ -1,6 +1,5 @@
 import express from "express";
 import mongoose from "mongoose";
-import bodyParser from "body-parser";
 import { movieRouter } from "./movies/router.ts";
 import cors from "cors";
 
@@ -8,7 +7,7 @@ import cors from "cors";
 const app = express();
 
 app.use(cors());
-app.use(bodyParser.json());
+app.use(express.json());
 
 app.use("/movie", movieRouter);
 
