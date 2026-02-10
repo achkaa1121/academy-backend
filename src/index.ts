@@ -2,7 +2,6 @@ import express from "express";
 import mongoose from "mongoose";
 import { movieRouter } from "./movies/router.ts";
 import cors from "cors";
-
 // Express app
 const app = express();
 
